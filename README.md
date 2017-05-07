@@ -10,3 +10,8 @@ It will automatically remove messages with matching:
 
 To use go to https://script.google.com, paste the JS source and save to Google Drive. 
 In the menu of Google Script you can set trigger to execute this automatically. 
+If many messages fall into your filter category then the execution may fail due to execution time constraint. 
+If that's your case, this tool could be easily changed to cater for this by removing the while loop inside mailboxCleanser() function and setting the trigger to more frequent option. 
+
+Important: The first time this is run your browser will display's Gmail's permissions webpage. 
+Once this tool does its job, these permissions can be revoked by going to https://myaccount.google.com/u/0/permissions. 
